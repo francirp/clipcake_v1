@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Page:</b>
+  <%= @text.page_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @text.position %>
+</p>
+
+<p>
+  <b>Message:</b>
+  <%= @text.message %>
+</p>
+
+
+<%= link_to 'Edit', edit_text_path(@text) %> |
+<%= link_to 'Back', texts_path %>

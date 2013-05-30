@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @project.name %>
+</p>
+
+<p>
+  <b>Occasion:</b>
+  <%= @project.occasion %>
+</p>
+
+<p>
+  <b>Event date:</b>
+  <%= @project.event_date %>
+</p>
+
+<p>
+  <b>Reminder 1:</b>
+  <%= @project.reminder_1 %>
+</p>
+
+<p>
+  <b>Reminder 2:</b>
+  <%= @project.reminder_2 %>
+</p>
+
+<p>
+  <b>Final reminder:</b>
+  <%= @project.final_reminder %>
+</p>
+
+<p>
+  <b>Contribution deadline:</b>
+  <%= @project.contribution_deadline %>
+</p>
+
+<p>
+  <b>Book size:</b>
+  <%= @project.book_size %>
+</p>
+
+<p>
+  <b>Invite message subject:</b>
+  <%= @project.invite_message_subject %>
+</p>
+
+<p>
+  <b>Invite message body:</b>
+  <%= @project.invite_message_body %>
+</p>
+
+<p>
+  <b>Sharing preference:</b>
+  <%= @project.sharing_preference %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @project.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

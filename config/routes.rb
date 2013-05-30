@@ -1,4 +1,35 @@
 Clipcake::Application.routes.draw do
+
+  root :to => 'static#index'
+
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+
+  get '/sign_in' => 'sessions#new', :as => 'sign_in'
+  get '/sessions' => 'sessions#create_local', :as => 'sessions'
+  get '/sign_out' => 'sessions#destroy', :as => 'sign_out'
+
+  resources :roles
+
+
+  resources :texts
+
+
+  resources :photos
+
+
+  resources :pages
+
+
+  resources :projects
+
+
+  resources :facebooks
+
+
+  resources :users
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

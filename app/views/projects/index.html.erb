@@ -1,0 +1,45 @@
+<h1>Listing projects</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Occasion</th>
+    <th>Event date</th>
+    <th>Reminder 1</th>
+    <th>Reminder 2</th>
+    <th>Final reminder</th>
+    <th>Contribution deadline</th>
+    <th>Book size</th>
+    <th>Invite message subject</th>
+    <th>Invite message body</th>
+    <th>Sharing preference</th>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= project.name %></td>
+    <td><%= project.occasion %></td>
+    <td><%= project.event_date %></td>
+    <td><%= project.reminder_1 %></td>
+    <td><%= project.reminder_2 %></td>
+    <td><%= project.final_reminder %></td>
+    <td><%= project.contribution_deadline %></td>
+    <td><%= project.book_size %></td>
+    <td><%= project.invite_message_subject %></td>
+    <td><%= project.invite_message_body %></td>
+    <td><%= project.sharing_preference %></td>
+    <td><%= project.name %></td>
+    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project', new_project_path %>

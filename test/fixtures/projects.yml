@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  occasion: MyString
+  event_date: 2013-05-30
+  reminder_1: 2013-05-30
+  reminder_2: 2013-05-30
+  final_reminder: 2013-05-30
+  contribution_deadline: 2013-05-30
+  book_size: MyString
+  invite_message_subject: MyString
+  invite_message_body: MyText
+  sharing_preference: MyString
+  name: MyString
+
+two:
+  name: MyString
+  occasion: MyString
+  event_date: 2013-05-30
+  reminder_1: 2013-05-30
+  reminder_2: 2013-05-30
+  final_reminder: 2013-05-30
+  contribution_deadline: 2013-05-30
+  book_size: MyString
+  invite_message_subject: MyString
+  invite_message_body: MyText
+  sharing_preference: MyString
+  name: MyString

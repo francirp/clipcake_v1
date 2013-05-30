@@ -1,0 +1,31 @@
+<h1>Listing facebooks</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Uid</th>
+    <th>Provider</th>
+    <th>Access token</th>
+    <th>Access token expires at</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @facebooks.each do |facebook| %>
+  <tr>
+    <td><%= facebook.user_id %></td>
+    <td><%= facebook.uid %></td>
+    <td><%= facebook.provider %></td>
+    <td><%= facebook.access_token %></td>
+    <td><%= facebook.access_token_expires_at %></td>
+    <td><%= link_to 'Show', facebook %></td>
+    <td><%= link_to 'Edit', edit_facebook_path(facebook) %></td>
+    <td><%= link_to 'Destroy', facebook, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Facebook', new_facebook_path %>

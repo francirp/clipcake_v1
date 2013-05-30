@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @facebook.user_id %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%= @facebook.uid %>
+</p>
+
+<p>
+  <b>Provider:</b>
+  <%= @facebook.provider %>
+</p>
+
+<p>
+  <b>Access token:</b>
+  <%= @facebook.access_token %>
+</p>
+
+<p>
+  <b>Access token expires at:</b>
+  <%= @facebook.access_token_expires_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_facebook_path(@facebook) %> |
+<%= link_to 'Back', facebooks_path %>

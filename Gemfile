@@ -6,10 +6,24 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'omniauth-oauth2'
+gem 'omniauth-facebook'
 
 # Gems used only for assets and not required
 # in production environments by default.
+
+gem 'fql'
+
+group :development do
+  gem 'sqlite3'
+  gem 'better_errors'
+  gem 'dotenv-rails'
+end
+
+group :production do
+  gem 'pg'
+end
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -23,7 +37,7 @@ end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
